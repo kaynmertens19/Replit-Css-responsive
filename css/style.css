@@ -1,0 +1,267 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+header {
+  background-color: #0f172b;
+  padding: 25px;
+  height: fit-content;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+
+body {
+  background-color: rgba(203, 191, 191, 0.23);
+}
+
+
+.link {
+  align-self: flex-end;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.link:active {
+  color: #e9c46a;
+}
+
+section {
+  margin-bottom: 75px;
+}
+
+.hero_section {
+  height: 100vh;
+  background-image: url("../assets/img/bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 14, 14, 0.66);
+  display: inline-flex;
+}
+
+.layer img div {
+  display: inline-block;
+}
+
+.barbecue {
+  align-self: center;
+  height: 500px;
+  margin-left: 200px;
+  animation: rotate-center 15s linear infinite both;
+}
+
+.hero_section_text {
+  color: white;
+  max-width: 350px;
+  margin-left: 300px;
+  align-self: center;
+}
+
+.hero_title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.hero_section_text p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.hero_section_text button {
+  background-color: #e9c46a;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.rotate-center {
+  -webkit-animation: rotate-center 5s linear infinite both;
+  animation: rotate-center 5s linear infinite both;
+}
+
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.features_section {
+  min-height: auto;
+  padding: 50px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.feature {
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 200px;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+  margin: 10px 0
+}
+
+.feature i {
+  margin: 30px 0;
+}
+
+.feature p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #33322f;
+}
+
+.feature h5 {
+  color: #0f172b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.fa-solid {
+  color: #e9c46a
+}
+
+
+.features_section .feature {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.feature:hover {
+  background-color: #e9c46a;
+}
+
+.feature:hover p {
+  color: white;
+}
+
+.feature:hover .fa-solid {
+  color: white;
+}
+
+.feature:hover h5 {
+  color: white;
+}
+
+.menu_section {
+  padding: 50px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.top_menu {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.top_menu h5 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-family: 'Pacifico', cursive;
+  color: #e9c46a;
+}
+
+.top_menu h2 {
+  font-size: 45px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.dish_image {
+  float: left;
+  margin-right: 10px;
+}
+
+.dish_price {
+  float: right;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ad924f;
+}
+
+.dish_information {
+  padding: 8px;
+}
+
+.dish_information h4 {
+  margin-bottom: 15px;
+}
+
+.dish_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dish_information h4 p {
+  display: inline-block;
+}
+
+tr {
+  border-bottom: 1px solid #e9c46a;
+}
+
+td {
+  padding: 10px;
+}
+
+footer {
+  background-color: #0f172b;
+  height: 140px;
+  color: white;
+  padding: 30px;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer div {
+  display: inline-block;
+  margin-right: 50px;
+  /*float: right;*/
+}
+
+.footer_column {
+  min-height: 75px;
+}
+
+.footer_column_title {
+  font-family: 'Pacifico', cursive;
+  font-size: larger;
+  color: #e9c46a;
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #e9c46a;
+}
