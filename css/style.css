@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: 'Abel', sans-serif;
 }
@@ -264,4 +269,93 @@ footer a {
 
 footer a:hover {
   color: #e9c46a;
+}
+
+
+.icono_nab{
+  display: none;
+}
+
+
+@media  screen and (max-width: 1024px) {
+  
+  header {
+    background-color: #0f172b;
+    padding: 25px;
+    height: fit-content;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .navbar{
+    margin-left: 0.5em;
+  }
+
+
+  .icono_nab{
+    display: inline-block;
+  }
+
+  .tamaño-icono1{
+    width: 9vw;  }
+
+  .tamaño-icono2{
+    width: 9vw;
+  }
+
+  .tamaño-icono3{
+    width: 9vw;
+  }
+
+  .tamaño-icono4{
+    width: 9vw;
+  }
+  .nav_bar-dissable{
+    display: none;
+    
+  }
+
+  .hero_section_text{
+    color: white;
+    max-width: 350px;
+  }
+
+  .hero_title{
+      font-size: 2rem;
+      margin-bottom: 50px;
+      position: absolute;
+      left: 1em;
+      top: 4em;
+    
+  }
+
+  .hero_text{
+    position: absolute;
+    left: 2em;
+    top: 10em;
+  }
+
+  .boton-hero{
+    position: absolute;
+    left: 2em;
+    top: 17em;
+  }
+
+  .barbecue{
+    position: absolute;
+    left: -8em;
+    top: 30em;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .hero_section {
+    height: 105vh;
+    background-image: url("../assets/img/bg-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
 }
